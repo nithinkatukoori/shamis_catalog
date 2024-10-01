@@ -159,7 +159,7 @@ public class ShamirSecretSharing {
             if (entry.getKey().equals("keys")) continue;
             if (index >= n) break;
 
-            JsonObject shareData = entry.getValue().getAsJsonObject();
+            JsonObject shareData = entry.getValue().getAsJsonObject();~
             int base = shareData.get("base").getAsInt();
             String value = shareData.get("value").getAsString();
             BigInteger shareValue = new BigInteger(value, base);
